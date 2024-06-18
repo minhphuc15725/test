@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+h1 {
+    animation: doimau 1s infinite;
+    padding-bottom: 50px;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    background: #5f5f5f;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+nav a {
+    display: inline-block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a:hover, nav a.active {
+    background-color: #ddd;
+    color: black;
+}
+.article-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 100px;
+}
+.article {
+    display: flex;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    box-shadow: 1px 1px 5px rgb(75, 75, 75);
+}
+.article img {
+    width: 150px;
+    height: auto;
+    margin-right: 30px;
+}
+.article h2 {
+    color: #333;
+    font-size: 1.2em;
+    margin: 0;
+}
+p {
+    color: #666;
+}
+.article a:hover h2 {
+    text-decoration: underline;
+}
+.xemthem {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    background-color: rgb(160, 160, 160);
+    padding: 10px;
+    margin: 0 auto;
+    width: 130px;
+    border-radius: 20px;
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #808080;
+    color: #ffffff;
+    width: 100%;
+    bottom: 0;
+}
+.tbquangcao {
+    display: none;
+    padding: 100px 0;
+    position: fixed;
+    top: 150px;
+    background-color: #000000;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px rgb(0, 0, 0);
+    z-index: 9999;
+    width: 100%;
+    text-align: center;
+    opacity: 90%;
+}
+.quangcao {
+    position: relative;
+}
+.close {
+    position: absolute;
+    right: 10px;
+    top: -120px;
+    color: #202020;
+}
+.close:hover, h3:hover {
+    color: rgb(255, 255, 255);
+}
+@keyframes doimau {
+    0% {
+        color: red;
+    }
+    25% {
+        color: rgb(255, 242, 0);
+    }
+    50% {
+        color: rgb(0, 255, 17);
+    }
+    75% {
+        color: rgb(17, 0, 255);
+    }
+    100% {
+        color: rgb(255, 0, 153);
+    }
+}
+@keyframes nhapnhay {
+    0% {
+        opacity: 0%;
+        color: red;
+    }
+    100% {
+        opacity: 100%;
+        color: red;
+    }
+}
+.doimau {
+    animation: doimau 0.65s infinite;
+}
+.nhapnhay {
+    animation: nhapnhay 2s infinite;
+}
